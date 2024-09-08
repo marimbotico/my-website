@@ -32,7 +32,7 @@ const Portfolio = () => {
 
     return (
         <div className='contact-container'>
-            <Bounce cascade damping={0.1} duration={1000}>
+            <Bounce cascade damping={0.1} duration={1500}>
                 {logos.map((logo, index) => (
                     <a 
                         key={index} 

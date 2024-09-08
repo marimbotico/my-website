@@ -1,19 +1,68 @@
 .code-group {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   width: 100%;
-  margin-top: 5%;
 }
 
 .code {
   width: 20%;
+  min-width: 120px;
+  margin-bottom: 1rem;
 }
 
 .code img {
-  width: 30%;
+  width: 60%;
+  max-width: 80px;
+  height: auto;
 }
 
 .code p {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.about-card {
+  position: relative;
+  margin: 4rem auto;
+  z-index: 1;
+  background-color: rgba(150, 223, 218, 0.7);
+  color: rgb(11, 77, 112);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  width: 90%;
+  max-width: 800px;
+  padding: 2rem;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .code {
+    width: 30%;
+  }
+
+  .about-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .code {
+    width: 45%;
+  }
+
+  .code img {
+    width: 50%;
+  }
+
+  .code p {
+    font-size: 0.8rem;
+  }
+
+  .about-card {
+    padding: 1rem;
+  }
 }

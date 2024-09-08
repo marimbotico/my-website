@@ -11,7 +11,7 @@ const Home = () => {
     <div className="home">
       <div className="content-wrapper">
         <div className="text-content">
-          <Bounce cascade damping={0.1} duration={3000} triggerOnce>
+          <Bounce cascade damping={0.1} duration={2000} triggerOnce>
             <h1>Hi! I am Isaac</h1>
           </Bounce>
 

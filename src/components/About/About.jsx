@@ -4,7 +4,7 @@ import { Fade } from 'react-awesome-reveal';
 
 const About = () => {
     return (
-        <Fade direction="left" cascade damping={0.1}>
+        <Fade direction="left" cascade damping={0.1} duration={1000}>
         <div className="code-group">
           {codeLogos.map((code, index) => (
             <div key = {index} className="code">

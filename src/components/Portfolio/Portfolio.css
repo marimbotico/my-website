@@ -1,0 +1,45 @@
+.portfolio-container {
+    background: linear-gradient(45deg, #c9d1d6, #00b4d8);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+  }
+  
+  .project-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-link:hover {
+    transform: scale(1.05);
+  }
+  
+  .project-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-name {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .portfolio-container {
+      gap: 1rem;
+    }
+  
+    .project-image {
+      max-width: 250px;
+    }
+  }

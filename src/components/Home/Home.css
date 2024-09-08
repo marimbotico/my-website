@@ -1,0 +1,153 @@
+.home {
+  background: linear-gradient(45deg, #00090e, #00b4d8);
+  color: white;
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 5vh 5vw;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  z-index: 1;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 50%;
+  padding-right: 2rem;
+}
+
+.home h1,
+.home h2 {
+  position: relative;
+  text-align: left;
+  max-width: 100%;
+}
+
+.home h1 {
+  font-weight: 800;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(249, 243, 243);
+  text-shadow: 5px 5px 5px rgb(6, 5, 5);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.home h2 {
+  font-size: 2rem;
+  color: rgb(243, 238, 238);
+  text-shadow: 3px 3px 3px rgb(36, 34, 34);
+  opacity: 0;
+  animation: fadeIn 2s forwards 2.5s;
+}
+
+.typed-cursor {
+  font-size: 2rem;
+  color: rgb(5, 187, 228);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-container {
+  flex: 1;
+  max-width: 45%;
+  z-index: 1;
+}
+
+.carousel-inner {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+.carousel-caption h3 {
+  color: white;
+}
+
+.home button {
+  height: 50px;
+  width: 200px;
+  border-radius: 18px;
+  outline: none;
+  border: none;
+  background: rgb(5, 187, 228);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.25s ease-in-out;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: rgb(15, 14, 14);
+  margin-top: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.home button:hover {
+  background: rgb(55, 40, 40);
+  color: rgb(38, 211, 93);
+  transform: translateY(-3px);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 3vh 3vw;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .text-content,
+  .carousel-container {
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  .text-content {
+    padding-bottom: 2rem;
+  }
+
+  .home h1 {
+    font-size: 2.5rem;
+  }
+
+  .home h2 {
+    font-size: 1.5rem;
+  }
+
+  .typed-cursor {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,31 @@
+.contact-container {
+    background: linear-gradient(45deg, #e3e8ec, #595659);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0.75rem auto;
+  }
+  
+  .logo-link {
+    display: inline-block;
+  }
+  
+  .logo-image {
+    width: 40px;  /* Adjust this value to make the images smaller */
+    height: 40px; /* Adjust this value to make the images smaller */
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+  }
+  
+  .logo-image:hover {
+    opacity: 0.8;
+  }
+  
+  /* Media query for larger screens */
+  @media (min-width: 768px) {
+    .logo-image {
+      width: 50px;  /* Slightly larger on bigger screens */
+      height: 50px;
+    }
+  }

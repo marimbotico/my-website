@@ -4,6 +4,7 @@ import { Zoom } from 'react-awesome-reveal';
 import Blog from '../Portfolio/assets/explore-the-world.jpg'
 import Movies from '../Portfolio/assets/movie-genres.jpg'
 import { ReactTyped } from 'react-typed';
+import Mail from './assets/white-mail.jpeg'
 
 const Portfolio = () => {
     const projects = [
@@ -21,10 +22,7 @@ const Portfolio = () => {
 
     return (
         <div className='projects-heading'>
-            <h2>
-                {" "}
-                <ReactTyped strings={["Check out my latest projects: "]} startWhenVisible typeSpeed={100} />
-            </h2>
+            <h2>Check out my latest projects:</h2>
             <div className='portfolio-container'>
                 <Zoom cascade damping={0.1}>
                     {projects.map((project, index) => (
@@ -44,6 +42,10 @@ const Portfolio = () => {
                         </a>
                     ))}
                 </Zoom>
+            </div>
+            <div className='contact-me'>
+                <img src={Mail} alt="Email" />
+                <h2>Contact me: isaacfer21@gmail.com</h2>
             </div>
         </div>
     );

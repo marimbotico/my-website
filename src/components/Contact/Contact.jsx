@@ -5,6 +5,7 @@ import Github from './assets/github.jpg';
 import Linkedin from './assets/linkedin.jpg';
 import Resume from './assets/resume.jpg';
 
+
 const Portfolio = () => {
     const logos = [
         {
@@ -17,17 +18,11 @@ const Portfolio = () => {
             src: Github,
             link: "https://github.com/marimbotico",
         },
-        // Uncomment and update these as needed
-        // {
-        //     name: 'Email',
-        //     src: Mail,
-        //     link: "mailto:isaacfer21@gmail.com"
-        // },
-        // {
-        //     name: "Resume",
-        //     src: Resume,
-        //     link: ResumePDF
-        // }
+        {
+            name: "Resume",
+            src: Resume,
+            // link: ResumePDF
+        }
     ];
 
     return (

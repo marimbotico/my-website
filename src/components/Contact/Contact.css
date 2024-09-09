@@ -12,8 +12,10 @@
   }
   
   .logo-image {
-    width: 40px;  /* Adjust this value to make the images smaller */
-    height: 40px; /* Adjust this value to make the images smaller */
+    margin-top: 3px;
+    margin-bottom: 5px;
+    width: 40px;  
+    height: 40px; 
     object-fit: contain;
     transition: opacity 0.3s ease;
   }

@@ -126,6 +126,11 @@
     padding: 3vh 3vw;
   }
 
+  .home::after {
+    bottom: -15%; 
+    height: 40%; 
+  }
+
   .content-wrapper {
     flex-direction: column;
   }
@@ -152,3 +157,15 @@
     font-size: 1.5rem;
   }
 }
+
+/* .home::after {
+  content: "";
+  position: absolute;
+  bottom: -40%;
+  left: -10%;
+  right: -10%;
+  height: 40%;
+  background-color: white;
+  border-radius: 50% 50% 0 0;
+  z-index: 1;
+} */

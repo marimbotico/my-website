@@ -45,7 +45,7 @@ const Portfolio = () => {
             </div>
             <div className='contact-me'>
                 <img src={Mail} alt="Email" />
-                <h2>Contact me: isaacfer21@gmail.com</h2>
+                <h2>Isaac Fernandez | isaacfer21@gmail.com</h2>
             </div>
         </div>
     );

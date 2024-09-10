@@ -30,7 +30,7 @@ const About = () => {
         <div className="code-group">
           {codeLogos.map((code, index) => (
             <div key={index} className="code">
-              <img src={code.image} alt={code.alt} />
+              <img src={code.src} alt={code.alt} />
               <p>{code.name}</p>
             </div>
           ))}

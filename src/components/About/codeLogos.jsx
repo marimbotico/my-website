@@ -1,3 +1,4 @@
+
 export const codeLogos = [
   { name: "JS", src: "/assets/javascript.jpg", alt: "JavaScript" },
   { name: "HTML", src: "/assets/html-5.jpg", alt: "HTML" },

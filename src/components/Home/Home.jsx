@@ -19,7 +19,7 @@ const Home = () => {
             I'm a{" "}
             <ReactTyped
               strings={["Musician", "Teacher", "Software Developer"]}
-              startDelay={2000}
+              startDelay={1000}
               typeSpeed={100}
               loop
               backSpeed={50}

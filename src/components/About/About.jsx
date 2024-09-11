@@ -9,20 +9,20 @@ const About = () => {
     <div className='about-container'>
       <div className='about-card'>
         <h2>My name is Isaac Fernandez.</h2>
-        <h3>I'm a front-end developer based in Florida.</h3>
+        <h4>I'm a front-end developer based in Florida.</h4>
         <h4>I used to spend most of my days playing drums as a professional percussionist.</h4>
         <div className='typed'>
-          <h3>
+          <h4><br />
             <ReactTyped
               strings={["{Now I spend most of my days writing clean code.}"]}
               startWhenVisible
               typeSpeed={50}
             />
-          </h3>
+          </h4>
         </div>
-        
+        <br />
         <Fade cascade damping={0.1} duration={8000} triggerOnce>
-          <h5>I specialize in crafting visually appealing and user-friendly applications. My preferred programming languages and frameworks are:</h5>
+          <h4>I specialize in crafting visually appealing and user-friendly applications. My preferred programming languages and frameworks are:</h4>
         </Fade>
       </div>
 

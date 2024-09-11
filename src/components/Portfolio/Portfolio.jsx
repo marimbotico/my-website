@@ -16,7 +16,7 @@ const Portfolio = () => {
         {
             name: 'JQuery Movies',
             src: Movies,
-            link: "https://github.com/marimbotico",
+            link: "https://jquery-movies-app.netlify.app/",
         },
     ];
 

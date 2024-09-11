@@ -1,8 +1,8 @@
-import Bootstrap from '../assets/bootstrap.png';
-import JS from '../assets/javascript.jpg';
-import CSS from '../assets/css.jpg';
-import HTML from '../assets/html-5.jpg';
-import React from '../assets/react.jpg';
+import Bootstrap from './assets/bootstrap.png'
+import JS from './assets/javascript.jpg';
+import CSS from './assets/css.jpg';
+import HTML from './assets/html-5.jpg';
+import React from './assets/react.jpg';
 
 export const codeLogos = [
   { name: "JS", src: JS, alt: "JavaScript" },

@@ -4,8 +4,11 @@ import { Bounce } from 'react-awesome-reveal';
 import Github from './assets/github.jpg';
 import Linkedin from './assets/linkedin.jpg';
 import Resume from './assets/resume.jpg';
+import ResumePDF from '../Contact/assets/ResumePDF.pdf';
 
-const Contact = () => {
+
+
+const Portfolio = () => {
     const logos = [
         {
             name: 'LinkedIn',
@@ -20,7 +23,7 @@ const Contact = () => {
         {
             name: "Resume",
             src: Resume,
-            link: "/ResumePDF.pdf",
+            link: ResumePDF,
         }
     ];
 
@@ -30,7 +33,7 @@ const Contact = () => {
                 {logos.map((logo, index) => (
                     <a 
                         key={index} 
-                        href={logo.name === "Resume" ? `${window.location.origin}/ResumePDF.pdf` : logo.link} 
+                        href={logo.link} 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="logo-link"
@@ -47,4 +50,4 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+export default Portfolio;

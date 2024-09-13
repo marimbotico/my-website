@@ -3,7 +3,6 @@ import './Portfolio.css';
 import { Zoom } from 'react-awesome-reveal';
 import Blog from '../Portfolio/assets/explore-the-world.jpg'
 import Movies from '../Portfolio/assets/movie-genres.jpg'
-import { ReactTyped } from 'react-typed';
 import Mail from './assets/white-mail.jpeg'
 
 const Portfolio = () => {
@@ -33,11 +32,13 @@ const Portfolio = () => {
                             rel="noopener noreferrer"
                             className="project-link"
                         >
-                            <img
-                                src={project.src}
-                                alt={project.name}
-                                className="project-image"
-                            />
+                            <div className="project-image-container">
+                                <img
+                                    src={project.src}
+                                    alt={project.name}
+                                    className="project-image"
+                                />
+                            </div>
                             <div className="project-name">{project.name}</div>
                         </a>
                     ))}

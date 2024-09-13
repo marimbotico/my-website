@@ -4,7 +4,7 @@ import { Bounce } from 'react-awesome-reveal';
 import Github from './assets/github.jpg';
 import Linkedin from './assets/linkedin.jpg';
 import Resume from './assets/resume.jpg';
-import ResumePDF from '../Contact/assets/ResumePDF.pdf';
+import ResumePDF from './assets/ResumePDF.pdf';
 
 
 

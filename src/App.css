@@ -37,3 +37,18 @@
     transform: rotate(360deg);
   }
 }
+
+.section {
+  /* padding-top: 2px; Add padding equal to the height of the navbar */
+  padding-bottom: 20px; /* Adjust as needed for visual balance */
+}
+
+html, body {
+  scroll-behavior: smooth; /* This ensures smooth scrolling */
+}
+
+@media (max-width: 912px) {
+  .section {
+    padding-top: 10px; /* Adjust padding for smaller screens */
+  }
+}

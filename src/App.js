@@ -11,29 +11,34 @@ function App() {
   const aboutRef = useRef(null);
   const portfolioRef = useRef(null);
 
-
   const scrollToSection = (ref) => {
-    ref.current.scrollIntoView({ behavior: 'smooth' });
+    const navbarHeight = document.querySelector('nav').offsetHeight;
+    if (ref && ref.current) {
+      window.scrollTo({
+        top: ref.current.offsetTop - navbarHeight,
+        behavior: 'smooth',
+      });
+    }
   };
 
   return (
     <div className="App">
-      <CustomNavbar 
+      <CustomNavbar
         scrollToSection={scrollToSection}
         homeRef={homeRef}
         aboutRef={aboutRef}
         portfolioRef={portfolioRef}
       />
-      <div ref={homeRef}>
+      <div ref={homeRef} className="section">
         <Home />
       </div>
-      <div ref={aboutRef}>
+      <div ref={aboutRef} className="section">
         <About />
       </div>
-      <div ref={portfolioRef}>
+      <div ref={portfolioRef} className="section">
         <Portfolio />
       </div>
-      <div>
+      <div className="section">
         <Contact />
       </div>
     </div>

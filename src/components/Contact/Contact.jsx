@@ -5,9 +5,7 @@ import Github from './assets/github.jpg';
 import Linkedin from './assets/linkedin.jpg';
 import Resume from './assets/resume.jpg';
 
-
-
-const Portfolio = () => {
+const Contact = () => {
     const logos = [
         {
             name: 'LinkedIn',
@@ -22,7 +20,7 @@ const Portfolio = () => {
         {
             name: "Resume",
             src: Resume,
-            link: `${process.env.PUBLIC_URL}/ResumePDF.pdf`,
+            link: "/ResumePDF.pdf",
         }
     ];
 
@@ -32,7 +30,7 @@ const Portfolio = () => {
                 {logos.map((logo, index) => (
                     <a 
                         key={index} 
-                        href={logo.link} 
+                        href={logo.name === "Resume" ? `${window.location.origin}/ResumePDF.pdf` : logo.link} 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="logo-link"
@@ -49,4 +47,4 @@ const Portfolio = () => {
     );
 };
 
-export default Portfolio;
+export default Contact;

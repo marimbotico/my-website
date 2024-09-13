@@ -22,7 +22,7 @@ const Portfolio = () => {
         {
             name: "Resume",
             src: Resume,
-            link: "/ResumePDF.pdf",
+            link: `${process.env.PUBLIC_URL}/ResumePDF.pdf`,
         }
     ];
 
